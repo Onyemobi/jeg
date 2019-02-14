@@ -1,0 +1,17 @@
+<script>
+$("#hamburger").click(function(){
+	
+	if ( $("#shop-by-category").hasClass("visible") )
+	{ 	
+	$("body", "html").css("overflow", "hidden");
+	$("#shop-by-category").css({"overflow": "scroll", "height": "80vh", "position": "absolute"});
+	} 
+	
+	else{
+	$("body", "html").css("overflow", "auto"); 
+	}
+
+});
+</script>
+
+
